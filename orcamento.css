@@ -1,0 +1,72 @@
+/* ================================
+   Estilo para o Simulador de Orçamento
+   ================================ */
+
+#simulador-orcamento {
+    margin: 80px;
+    background-color: #f8fbff;
+    font-family: 'Poppins', sans-serif;
+}
+
+#simulador-orcamento h2 {
+    font-weight: 600;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#simulador-orcamento form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+#simulador-orcamento .form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+#simulador-orcamento .form-control,
+#simulador-orcamento .form-select {
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+#simulador-orcamento .form-control:focus,
+#simulador-orcamento .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.25);
+    background-color: #fff;
+    outline: none;
+}
+
+#simulador-orcamento textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#simulador-orcamento .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+#simulador-orcamento .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+#resultadoOrcamento {
+    background-color: #e9f7ef;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #c7efd8;
+    color: #2f5f3f;
+    font-weight: 500;
+}

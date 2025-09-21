@@ -1,0 +1,74 @@
+/* =====================
+   Estilização do Formulário de Contato
+   ===================== */
+
+form {
+    max-width: 700px;
+    margin: 80px auto 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    font-family: 'Poppins', sans-serif;
+}
+
+form div {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.25);
+    outline: none;
+    background-color: #fff;
+}
+
+form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+form input[type="file"] {
+    padding: 10px;
+    background-color: #fff;
+}
+
+form button[type="submit"] {
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 576px) {
+    form {
+        padding: 20px;
+        margin: 60px 16px;
+    }
+}
