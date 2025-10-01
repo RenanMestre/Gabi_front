@@ -1,7 +1,7 @@
 
 :root {
-    --primary-color: #2e3870;
-    --secondary-color: #764ba2;
+    --primary-color: #702e2e;
+    --secondary-color: #000000;
     --accent-color: #f093fb;
     --dark-color: #1a1a2e;
     --light-color: #ffffff;
@@ -28,6 +28,11 @@ body {
     color: var(--dark-color);
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Custom Scrollbar */
