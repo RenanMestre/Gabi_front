@@ -23,8 +23,8 @@
     
     <!-- Custom CSS -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2283878369070294" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="orcamento.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/orcamento.css">
 </head>
 <body>
         <!-- Loading Screen -->
@@ -85,17 +85,9 @@
                             <select class="form-select" id="nivelDetalhe" name="nivelDetalhe" required>
                                 <option value="">Selecione...</option>
                                 <option value="basico">Básico</option>
-                                <option value="intermediario">Intermediário</option>
                                 <option value="premium">Premium</option>
+                                <option value="alto_padrao">Alto padrão</option>
                             </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="prazo" class="form-label">Prazo desejado (dias)</label>
-                            <input type="number" class="form-control" id="prazo" name="prazo" min="1" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="observacoes" class="form-label">Observações adicionais</label>
-                            <textarea class="form-control" id="observacoes" name="observacoes" rows="3"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Simular Orçamento</button>
                     </form>

@@ -30,6 +30,57 @@ body {
     overflow-x: hidden;
 }
 
+
+@media (max-width: 505px) {
+  body::before {
+    left: 0;
+    width: 100vw !important;
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    background-size: 30px 30px !important;
+    overflow-x: hidden !important;
+  }
+}
+
+/* Esconder em telas menores */
+@media (max-width: 768px) {
+  html, body {
+    width: 100vw !important;
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  body::before {
+    left: 0 !important;
+    width: 100vw !important;
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    background-size: 30px 30px !important;
+    overflow-x: hidden !important;
+  }
+}
+
+/* Esconder em telas menores */
+@media (max-width: 510px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -105,6 +156,11 @@ a {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-decoration: none;
+}
+
+.navbar-brand img {
+    width: 50px;
+    border-radius: 15px;
 }
 
 .navbar-nav .nav-link {
@@ -258,15 +314,15 @@ a {
 }
 
 .about-image {
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-lg);
     overflow: hidden;
+    width: 100%;
+    border-color: #000000;
 }
 
 .about-image img {
-    width: 100%;
-    height: auto;
+    width: 400px;
     transition: var(--transition);
+    border-radius: 20px;
 }
 
 .about-image:hover img {
@@ -414,6 +470,130 @@ a {
 .testimonial-stars {
     color: #ffd700;
     margin-bottom: 1rem;
+}
+
+.carousel-item .testimonial-card {
+  margin: auto;
+  max-width: 90%;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.carousel-item .testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: 100% 100%;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+  transition: filter 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.4));
+}
+
+/* ---------- TESTIMONIAL CAROUSEL (MOBILE) ---------- */
+
+#testimonialCarousel .testimonial-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2rem;
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#testimonialCarousel .testimonial-avatar img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ff000033; /* Slightly lighter blue border */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  margin-bottom: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+#testimonialCarousel .testimonial-avatar img:hover {
+  transform: scale(1.05);
+}
+
+#testimonialCarousel .testimonial-stars i {
+  color: #f8b400;
+  font-size: 1.3rem;
+  margin: 0 2px;
+  transition: color 0.3s ease;
+}
+
+#testimonialCarousel .testimonial-stars i:hover {
+  color: #ffca28; /* Slightly brighter star on hover */
+}
+
+#testimonialCarousel .testimonial-card p {
+  font-style: italic;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.75;
+  margin-bottom: 1.8rem;
+  font-family: 'Georgia', serif;
+}
+
+#testimonialCarousel .testimonial-meta {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #222;
+  letter-spacing: 0.03em;
+}
+
+#testimonialCarousel .testimonial-meta small {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: normal;
+  margin-top: 4px;
+}
+
+/* Carousel controls */
+#testimonialCarousel .carousel-control-prev-icon,
+#testimonialCarousel .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 50%;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  transition: background-color 0.3s ease;
+}
+
+#testimonialCarousel .carousel-control-prev-icon:hover,
+#testimonialCarousel .carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Slide transition effect */
+#testimonialCarousel .carousel-item {
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Optional: indicators (bullets) */
+#testimonialCarousel .carousel-indicators [data-bs-target] {
+  background-color: #ff0000;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.6;
+  margin: 0 6px;
+  transition: opacity 0.3s ease;
 }
 
 /* WhatsApp Button */
